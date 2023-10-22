@@ -216,11 +216,12 @@ span {
 .services-container .services-box{
     flex: 1 1 30rem;
     background: var(--bg-color);
-    padding: 3rem 2rem 4rem;
+    padding: 2rem 1rem 3rem;
     border-radius: 2rem;
     text-align: center;
     border: .3rem solid var(--bg-color);
     transition: .5s ease;
+    max-width: 200px;
 
 }
 
@@ -252,6 +253,13 @@ span {
     background: var(--second-bg-color);
 }
 
+.carrier-container{
+    margin: 3rem;
+    border: .3rem solid var(--bg-color);
+    border-radius: 3%;
+    padding: 1.5rem;
+}
+
 .portfolio h2{
     margin-bottom: 4rem;
 }
@@ -269,6 +277,7 @@ span {
     box-shadow:  0 0 1rem var(--txt);
     overflow: hidden;
     display: flex;
+    max-height: 200px;
 }
 
 .portfolio-box img{

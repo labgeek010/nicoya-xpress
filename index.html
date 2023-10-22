@@ -79,13 +79,11 @@
             <div class="services-box">
                 <i class='bx bx-package' ></i>
                 <h3>Casillero</h3>
-                <p><strong>Casillero Gratis y Libre de Impuestos</strong> <hr>
+                <p><strong>Casillero Gratis y Libre de Impuestos</strong>
                     Ofrecemos un casillero gratuito en la zona, sin costos extras ni 
-                    tarifas mensuales. Además, aseguramos una importación libre de impuestos 
-                    para tus compras internacionales, ahorrándote tiempo y dinero en aduanas.
+                    tarifas mensuales. 
                 </p>
                 <a href="#tracker" class="btn">Rastreador</a>
-
             </div>
 
             <div class="services-box">
@@ -99,8 +97,8 @@
             <div class="services-box">
                 <i class='bx bx-store' ></i>
                 <h3>Asistente de Compas</h3>
-                <p>Contactanos por WhatsApp, dejanos saber los productos que deseas comprar, coordina con nuestro servicio al cliente y haremos la compra por ti.</p>
-                    <a href="https://api.whatsapp.com/send/?phone=50685805682&text&type=phone_number&app_absent=0" target="_blank"><i class='bx bxl-whatsapp' ></i>Contactanos</a>
+                <p>Contactanos dejanos saber los productos que deseas comprar coordina con nuestra atención al cliente y haremos tu compra.</p>
+                    <a href="https://api.whatsapp.com/send/?phone=50685805682&text&type=phone_number&app_absent=0" class="btn" target="_blank">Contactanos</a>
 
             </div>
         </div>
@@ -227,7 +225,7 @@
 
     <div class="services-container">
 
-        <div class="services-box">
+        <div class="services-tracker-box">
             <i class='bx bx-calculator' ></i>
             <h3>Calculadora de costos</h3>
             <p>Utiliza nuestra interfaz para generar un calculo estimado del costo de tu pedido.</p>
@@ -266,7 +264,7 @@
                 <h3>Tracker</h3>
                 <div class="services-tracker-box">
 
-                    <form id="tracking-form">
+                    <!-- <form id="tracking-form">
                         <label for="tracking-number">Número de Seguimiento:</label>
                         <input type="text" id="tracking-number" required>
                         <label for="carrier">Servicio de Envío:</label>
@@ -276,7 +274,27 @@
                           <option value="usps">USPS</option>
                         </select>
                         <button type="submit">Rastrear</button>
-                      </form>
+                      </form> this will be to enable the UPS and other carriers API -->
+
+                    <div class="carrier-container">
+                        <h3> <span>UPS</span></h3>
+                        <p>Te facilitamos la redireccion hacia la pagina de seguimiento de UPS</p>
+                        <a href="https://www.ups.com/track?loc=en_US&requester=ST/" class="btn">Seguimiento UPS </a>
+                    </div>
+
+                    <div class="carrier-container">
+                        <h3> <span>Fedex</span></h3>
+                        <p>Te facilitamos la redireccion hacia la pagina de seguimiento de Fedex</p>
+                        <a href="https://www.fedex.com/es-cr/home.html?gclid=CjwKCAjwkNOpBhBEEiwAb3MvvW2RNgvCnyZkKgen4cvcu2CvNjDxd_f_t4fyzm77ivqTldVhROh2iRoCqCkQAvD_BwE&gclsrc=aw.ds" class="btn">Seguimiento FeDex</a>
+                    </div>
+
+                    <div class="carrier-container">
+                        <h3> <span>USPS</span></h3>
+                        <p>Te facilitamos la redireccion hacia la pagina de seguimiento de USPS</p>
+                        <a href="https://tools.usps.com/go/TrackConfirmAction_input" class="btn">Seguimiento USPS</a>
+                    </div>
+
+
 
                 </div>
 
@@ -343,26 +361,83 @@
         </div>
     </section>
 
+        <!-- Instructions PDFs sections-->
+
+        <section class="portfolio" id="Instructions">
+            <h3 class="heading">¿Cómo asociar tu cuenta de <span>NicoyaXpress</span>  con tus marketplaces?</h3>
     
+            <div class="services-container">
+    
+                <div class="services-tracker-box">
+                    
+                    <div class="services-tracker-box">
+    
+                        <div class="carrier-container">
+                            <h3> <span>Descarga nuestro PDF 1</span></h3>
+                            <p>En este primer PDF, encontrarás información detallada sobre cómo crear una cuenta en Amazon.</p>
+                            <embed src="/assets/pdf/ConfiguracionAMAZON.pdf" type="application/pdf" width="100%" height="750">
+                        </div>
+    
+                        <div class="carrier-container">
+                            <h3> <span>Descarga nuestro PDF 2</span></h3>
+                            <p>En este primer PDF, encontrarás información detallada sobre cómo crear una cuenta en SheIn.</p>
+                            <embed src="/assets/pdf/ConfigurarSheIn.pdf" type="application/pdf" width="100%" height="750">
+                        </div>
+    
+    
+    
+                    </div>
+    
+                </div>
+    
+        </section>
+
+
+    <!-- FAQ & Terms&Conditions section -->
+    <section class="portfolio" id="Instructions">
+        <h3 class="heading">Para tu conveniencia, revisa nuestras Preguntas Frecuentes y nuestros Términos & Condiciones</h3>
+
+        <div class="services-container">
+
+            <div class="services-tracker-box">
+                
+                <div class="services-tracker-box">
+                    <div class="carrier-container">
+                        <h3> <span>T&C</span></h3>
+                        <embed src="/assets/pdf/T&C.pdf" type="application/pdf" width="100%" height="750">
+                    </div>
+                </div>
+
+                <div class="services-tracker-box">
+                    <div class="carrier-container">
+                        <h3> <span>Preguntas Frecuentes</span></h3>
+                        <embed src="/assets/pdf/FAQ.pdf" type="application/pdf" width="100%" height="750">
+                    </div>
+                </div>
+
+            </div>
+
+    </section>
+
 
     <!-- contact section design -->
 
     <section class="contact" id="contact">
         <h2 class="heading">Contácta<span>nos!</span></h2>
 
-        <form action="#">
+        <form  action="send.php" method="post">
             <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email Address">
+                <input type="text" placeholder="Nombre completo">
+                <input type="email" placeholder="Correo electrónico">
             </div>
 
 
             <div class="input-box">
-                <input type="number" placeholder="Contact Number">
-                <input type="text" placeholder="Email Subject">
+                <input type="number" placeholder="Numero de contact">
+                <input type="text" placeholder="Asunto de correo">
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Leave us your message"></textarea>
-            <input type="submit" value="Send Message" class="btn">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Dejanos tu mensaje"></textarea>
+            <input type="submit" value="Enviar mensaje" class="btn">
         </form>
     </section>
 
@@ -371,7 +446,14 @@
 
     <footer class="footer">
         <div class="footer-text">
-            <p>Copyright &copy; 2023 by LabGeek010 | All rights reserved</p>
+            <p>Copyright &copy; 2023 Nicoya Xpress. Todos los derechos reservados.</p>
+        </div>
+
+        <div class="social-media">
+            <a href="https://www.facebook.com/nicoyaxpresscr" target="_blank"><i class="bx bxl-facebook" ></i> </a>
+            <a href="https://www.instagram.com/nicoyaxpresscr/" target="_blank"> <i class='bx bxl-instagram'></i></a>
+            <a href="https://api.whatsapp.com/send/?phone=50685805682&text&type=phone_number&app_absent=0" target="_blank"><i class='bx bxl-whatsapp' ></i></a>
+
         </div>
 
         <div class="footer-iconTop">
