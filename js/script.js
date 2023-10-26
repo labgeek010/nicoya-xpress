@@ -22,7 +22,11 @@ window.onscroll = () => {
         if(top >= offset && top < offset + height) {
             navLinks.forEach(links => {
                 links.classList.remove('active');
+                console.log(id)
+            if(id) {
                 document.querySelector('header nav a[href*="' + id + '"]').classList.add('active');
+            }
+
             });
         };
 
@@ -100,3 +104,30 @@ document.getElementById('calculateTotal').addEventListener('click', function() {
 //     }
 //     // Procesa la respuesta y muestra la información de seguimiento en la página
 //   });
+
+
+var tab_lists = document.querySelectorAll(".tabs_list ul li");
+var tab_items = document.querySelectorAll(".tab_item"); 
+
+tab_lists.forEach(function(list){
+  list.addEventListener("click", function(){
+    var tab_data = list.getAttribute("data-tc");
+    
+    tab_lists.forEach(function(list){
+      list.classList.remove("active");
+    });
+    list.classList.add("active");
+    
+    tab_items.forEach(function(item){
+      var tab_class = item.getAttribute("class").split(" ");
+      if(tab_class.includes(tab_data)){
+        item.style.display = "block";
+      }
+      else{
+        item.style.display = "none";
+      }
+      
+    })
+    
+  })
+})
