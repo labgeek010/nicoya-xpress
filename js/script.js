@@ -58,6 +58,10 @@ ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact-
 ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 ScrollReveal().reveal('.services-box h3, .calculator', { origin: 'bottom' });
+ScrollReveal().reveal('.wrapper li, .tabs_content', { origin: 'bottom' });
+ScrollReveal().reveal('.portfolio, .tabs_content', { origin: 'right' });
+
+
 
 
 /* ---------------- typed js ----------------  */
