@@ -680,18 +680,22 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contácta<span>nos!</span></h2>
 
-        <form  action="send.php" method="post">
+        <form  id="form" action="" >
             <div class="input-box">
-                <input type="text" placeholder="Nombre completo">
-                <input type="email" placeholder="Correo electrónico">
+                <input name="nombre" type="text" placeholder="Nombre completo">
+
+                <label for="email"></label>
+                <input name="correo" type="email" placeholder="Correo electrónico">
             </div>
 
 
             <div class="input-box">
-                <input type="number" placeholder="Numero de contact">
-                <input type="text" placeholder="Asunto de correo">
+                <input name="numero" type="number" placeholder="Numero de contact">
+
+                <input name="subject" type="text" placeholder="Asunto de correo">
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Dejanos tu mensaje"></textarea>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Dejanos tu mensaje"></textarea>
+            <a href="mailto:info@nicoyaxpress.com" id="magia">Mail</a> 
             <input type="submit" value="Enviar" class="btn">
         </form>
     </section>

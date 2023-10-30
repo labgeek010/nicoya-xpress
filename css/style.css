@@ -705,6 +705,10 @@ iframe {
     height: 100%;
 }
 
+#magia{
+    opacity: 0;
+}
+
 
 
 /*BREAKPOINTS*/
