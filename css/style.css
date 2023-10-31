@@ -423,6 +423,7 @@ button:hover {
     transition: .5s ease;
     justify-content: center;
     margin: 5px auto;
+    max-width: 850px;
 }
 
 .services-tracker-box:hover{
