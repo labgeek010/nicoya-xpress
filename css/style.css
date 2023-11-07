@@ -40,7 +40,7 @@ body{
 
 section{
     min-height: 25vh;
-    padding: 10rem 9% 2rem;
+    padding: 5rem 9% 0.5rem;
 }
 
 
@@ -100,9 +100,7 @@ section{
 
 }
 
-img {
-    max-width: 100%; /* Optional: Ensure the image doesn't exceed the container's width */
-  }
+
 
 @keyframes floatImage {
     0% {
@@ -369,7 +367,6 @@ span {
 .portfolio-layer a i{
     font-size: 2rem;
     color: var(--second-bg-color);
-    pos
 }
 
 
@@ -590,7 +587,7 @@ button:hover {
   
 .tc_wrap .tabs_content .tab_head{
     text-align: center;
-    margin: 15px;
+    margin: 10px;
 }
   
 .tc_wrap .tabs_content .tab_body{
