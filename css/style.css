@@ -36,11 +36,12 @@ html{
 body{
     background: var(--bg-color);
     color: var(--text-color);
+    overflow: auto;
 }
 
 section{
     min-height: 25vh;
-    padding: 10rem 9% 2rem;
+    padding: 5rem 9% 2rem;
 }
 
 
@@ -93,7 +94,7 @@ section{
 }
 
 .home-img img{
-    width: 35vw;
+    width: 500px;
     border-radius: 50%;
     box-shadow: 0 0 3rem var(--main-color);
     animation: floatImage 4s ease-in-out infinite;
@@ -110,6 +111,10 @@ section{
     100% {
         transform: translateY(0);
     }
+}
+
+.home-content {
+    margin-top: 10rem;
 }
 
 .home-content  h3{
@@ -183,9 +188,10 @@ span {
 }
 
 .about-img img{
-    width: 35vw;
+    width: 25vw;
     border-radius: 50%;
     box-shadow: 0 0 3rem var(--main-color);
+    animation: floatImage 4s ease-in-out infinite;
 
 }
 
@@ -494,7 +500,7 @@ button:hover {
     padding: 1.5rem;
     font-size: 1.6rem;
     color: var(--text-color);
-    background: var(--bg-color);
+    background: var(--);
     border-radius: .8rem;
     margin: .7rem 0;
 }
