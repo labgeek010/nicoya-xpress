@@ -40,7 +40,7 @@ body{
 
 section{
     min-height: 25vh;
-    padding: 5rem 9% 0.5rem;
+    padding: 10rem 9% 2rem;
 }
 
 
@@ -49,7 +49,7 @@ section{
     position: fixed;
     top: 0;
     left: 0;
-    width: 85%;
+    width: 100%;
     padding: 2rem 9%;
     background: var(--bg-color);
     display: flex;
@@ -99,8 +99,6 @@ section{
     animation: floatImage 4s ease-in-out infinite;
 
 }
-
-
 
 @keyframes floatImage {
     0% {
@@ -222,7 +220,7 @@ span {
     width: auto;
 }
 
-.services-container{
+.services-container {
     width: 900px;
     display: flex;
     justify-content: center;
@@ -230,6 +228,7 @@ span {
     flex-wrap: wrap;
     gap: 2rem;
     margin: 1rem auto;
+
 }
 
 
@@ -298,23 +297,24 @@ span {
     gap: 2.5rem;
 }
 
-.portfolio-container .portfolio-box  {
+.portfolio-container .portfolio-box {
     position: relative;
     border-radius: 2rem;
     box-shadow:  0 0 1rem var(--txt);
     overflow: hidden;
     display: flex;
-    width: 225px;
+    width: auto;
+    max-width: 330px;
 }
 
 
 .portfolio-box img {
-    width: 175px;
-    height: 125px;
+    width: 100%;
+    max-height: 110px;
     transition: .5s ease;
     object-fit: contain;
-    justify-content: center; /* Centers horizontally within the container */
-    align-items: center;}
+
+}
 
 .portfolio-box:hover img {
     transform: scale(1.1);
@@ -350,7 +350,7 @@ span {
 
 .portfolio-layer p{
     font-size: 1.6rem;
-    margin: .3rem 0;
+    margin: .3rem 0 1rem;
     color: var(--bg-color);
 }
 
@@ -587,11 +587,11 @@ button:hover {
   
 .tc_wrap .tabs_content .tab_head{
     text-align: center;
-    margin: 10px;
+    margin: 15px;
 }
   
 .tc_wrap .tabs_content .tab_body{
-    height: calc(100% - 250px);
+    height: calc(100% - 200px);
     overflow: auto;
 }
   
