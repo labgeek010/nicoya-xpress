@@ -78,14 +78,13 @@ const typed = new Typed('.mutiple-text', {
 document.getElementById('calculateTotal').addEventListener('click', function() {
     const exchangeRate = parseFloat(document.getElementById('exchangeRate').value);
     const orderWeight = parseFloat(document.getElementById('orderWeight').value);
-    const orderAmount = parseFloat(document.getElementById('orderAmount').value);
 
-    if (isNaN(exchangeRate) || isNaN(orderWeight) || isNaN(orderAmount)) {
+    if (isNaN(exchangeRate) || isNaN(orderWeight)) {
         alert('Por favor, ingrese números válidos en todos los campos.');
         return;
     }
 
-    const totalCost = (orderAmount + (10 * orderWeight)) * exchangeRate;
+    const totalCost = ((10 * orderWeight)) * exchangeRate;
     document.getElementById('result').textContent = totalCost.toFixed(2);
 });
 
