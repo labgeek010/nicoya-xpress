@@ -334,6 +334,10 @@ span {
     max-width: 330px;
 }
 
+.portfolio-box {
+    min-height: 115px;
+}
+
 
 .portfolio-box img {
     width: 100%;
