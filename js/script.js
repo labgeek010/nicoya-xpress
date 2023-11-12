@@ -9,7 +9,7 @@ menuIcon.onclick = () => {
 }
 
 /* ----------------- scroll sections active link  ----------------- */
-let sections = document.querySelectorAll('section');
+let sections = document.querySelectorAll('section div');
 let navLinks = document.querySelectorAll('header nav a');
 
 window.onscroll = () => {
@@ -73,66 +73,6 @@ const typed = new Typed('.mutiple-text', {
     loop:true
 })
 
-/* Calculator code*/
-
-document.getElementById('calculateTotal').addEventListener('click', function() {
-    const exchangeRate = parseFloat(document.getElementById('exchangeRate').value);
-    const orderWeight = parseFloat(document.getElementById('orderWeight').value);
-
-    if (isNaN(exchangeRate) || isNaN(orderWeight)) {
-        alert('Por favor, ingrese números válidos en todos los campos.');
-        return;
-    }
-
-    const totalCost = ((10 * orderWeight)) * exchangeRate;
-    document.getElementById('result').textContent = totalCost.toFixed(2);
-});
-
-
-/* ----- API integration sections--------*/
-
-// document.getElementById("tracking-form").addEventListener("submit", function (e) {
-//     e.preventDefault();
-//     const trackingNumber = document.getElementById("tracking-number").value;
-//     const carrier = document.getElementById("carrier").value;
-  
-//     // Realiza una solicitud a la API correspondiente según el servicio seleccionado
-//     if (carrier === "fedex") {
-//       // Realiza una solicitud a la API de FedEx
-//     } else if (carrier === "ups") {
-//       // Realiza una solicitud a la API de UPS
-//     } else if (carrier === "usps") {
-//       // Realiza una solicitud a la API de USPS
-//     }
-//     // Procesa la respuesta y muestra la información de seguimiento en la página
-//   });
-
-
-var tab_lists = document.querySelectorAll(".tabs_list ul li");
-var tab_items = document.querySelectorAll(".tab_item"); 
-
-tab_lists.forEach(function(list){
-  list.addEventListener("click", function(){
-    var tab_data = list.getAttribute("data-tc");
-    
-    tab_lists.forEach(function(list){
-      list.classList.remove("active");
-    });
-    list.classList.add("active");
-    
-    tab_items.forEach(function(item){
-      var tab_class = item.getAttribute("class").split(" ");
-      if(tab_class.includes(tab_data)){
-        item.style.display = "block";
-      }
-      else{
-        item.style.display = "none";
-      }
-      
-    })
-    
-  })
-})
 
 /* ----- form functionality js code--------*/
 
