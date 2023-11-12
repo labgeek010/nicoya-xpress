@@ -196,6 +196,8 @@ span {
 }
 
 .heading{
+
+    margin-top: 25px;
     text-align: center;
     font-size: 4.5rem;
 }
@@ -243,6 +245,13 @@ span {
 }
 
 
+.prohibitted-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 5px;
+}
 
 .services-container .services-box{
     flex: 1 1 30rem;
@@ -255,6 +264,8 @@ span {
     max-width: 200px;
 
 }
+
+
 
 .services-container .services-box:hover{
     border-color: var(--main-color);
@@ -427,6 +438,7 @@ button:hover {
 #result {
     font-weight: bold;
 }
+
 
 
 .services-tracker-box{
@@ -899,7 +911,7 @@ iframe {
             align-items: center;
 
     }
-
+    
 
 }
 
@@ -907,6 +919,9 @@ iframe {
     .home-img img {
         width: 90vw;
     }
+    
+   
+
 
     .about-img img {
         width: 90vw;
