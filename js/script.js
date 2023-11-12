@@ -59,6 +59,7 @@ ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 ScrollReveal().reveal('.services-box h3, .calculator', { origin: 'bottom' });
 ScrollReveal().reveal('.wrapper li, .tabs_content', { origin: 'bottom' });
 ScrollReveal().reveal('.portfolio, .tabs_content', { origin: 'right' });
+ScrollReveal().reveal('.prohibitted-container, .prohibitted-box', { origin: 'bottom' });
 
 
 
