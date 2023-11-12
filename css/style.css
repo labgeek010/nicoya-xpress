@@ -249,24 +249,28 @@ span {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 5px auto;
     gap: 5px;
     text-align: center;
+    width: 950px;
+    margin: 0 auto;
+
 }
 
 .services-container .services-box{
     flex: 1 1 30rem;
     background: var(--bg-color);
-    padding: 2rem;
-    border-radius: 2rem;
+    padding: 1rem;
     text-align: center;
+    border-radius: 2rem;
     border: .3rem solid var(--bg-color);
     transition: .5s ease;
-    max-width: 200px;
 
 }
 
-
+.services-box {
+    width: 330px;
+    margin-bottom: 75px;
+}
 
 .services-container .services-box:hover{
     border-color: var(--main-color);
@@ -450,7 +454,7 @@ button:hover {
     border: .3rem solid var(--bg-color);
     transition: .5s ease;
     justify-content: center;
-    margin: 5px auto;
+    margin: 0 auto;
     max-width: 850px;
 }
 
@@ -741,6 +745,26 @@ iframe {
     opacity: 0;
 }
 
+.prohibitted-box{
+    flex: 1 1 30rem;
+    background: var(--bg-color);
+    padding: 1rem;
+    text-align: center;
+    border-radius: 2rem;
+    border: .3rem solid var(--bg-color);
+    transition: .5s ease;
+    width: 275px;
+}
+
+.prohibitted-box img {
+    width: 250px;
+    border-radius: 15%;
+}
+
+.prohibitted-box:hover{
+    border-color: var(--main-color);
+    transform: scale(1.02);
+}
 
 
 /*BREAKPOINTS*/
@@ -780,6 +804,10 @@ iframe {
         justify-content: center;
         align-items: center;
     }
+}
+
+.address-container img{
+    border-radius: 5%;
 }
 
 
@@ -920,7 +948,15 @@ iframe {
             align-items: center;
 
     }
+
+    .prohibitted-container{
+        width: 300px;
+    }
     
+    .prohibitted-box img {
+        width: 225px;
+        border-radius: 15%;
+    }
 
 }
 
@@ -954,6 +990,15 @@ iframe {
 
     .address-container{
         width: 330px;
+    }
+
+    .prohibitted-container{
+        width: 275px;
+    }
+    
+    .prohibitted-box img {
+        width: 150px;
+        border-radius: 15%;
     }
     
 }
