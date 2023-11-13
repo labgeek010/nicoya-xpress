@@ -669,7 +669,7 @@ button:hover {
 }
   
 .tc_wrap .tabs_content .tab_body .tab_item p{
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
   
 .tc_wrap .tabs_content .tab_body .tab_item.active{
@@ -688,6 +688,7 @@ button:hover {
 
 .tab_item{
     font-size: 1.4rem;
+    padding: 10px;
 }
 
 .tab_item img{

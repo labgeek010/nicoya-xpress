@@ -34,7 +34,7 @@ window.onscroll = () => {
     /* ----------------- sticky navbar  ----------------- */
     let header = document.querySelector('header');
 
-    header.classList.toggle('sticky', window.scrollY > 100);
+   header.classList.toggle('sticky', window.scrollY > 100);
 
 
     /* ----------------- remove toggle icon navbar when click navbar link (scroll) ----------------- */
@@ -55,10 +55,10 @@ ScrollReveal({
 ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
 ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact-form', { origin: 'bottom' });
 ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
-ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
+ScrollReveal().reveal('.home-content p, .about-content', { origin: 'left' });
 ScrollReveal().reveal('.services-box h3, .calculator', { origin: 'bottom' });
 ScrollReveal().reveal('.wrapper li, .tabs_content', { origin: 'bottom' });
-ScrollReveal().reveal('.portfolio, .tabs_content', { origin: 'right' });
+ScrollReveal().reveal('.portfolio, .tabs_content', { origin: 'left' });
 ScrollReveal().reveal('.prohibitted-container, .prohibitted-box', { origin: 'bottom' });
 
 
