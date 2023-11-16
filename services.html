@@ -29,6 +29,12 @@
         </nav>
 
     </header>
+
+    <section id="newsletter" class="section-p1 section-m1">
+       
+
+    </section>
+
     
     
         <!-- services section design -->
@@ -77,19 +83,6 @@
                 </div>
                 <br>
     
-    
-                <div class="services-tracker-box">
-                    <i class='bx bxs-map-pin'></i>
-    
-                    <div class="map-container">
-                        <h2>Nuestra sede está ubicada en:</h2>
-                        <div class="iframe-container" >
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1388.568238662024!2d-85.45586191428126!3d10.142881105183752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTDCsDA4JzMzLjYiTiA4NcKwMjcnMjIuOCJX!5e0!3m2!1ses!2scr!4v1697263310466!5m2!1ses!2scr"
-                                frameborder="0" allowfullscreen="allowfullscreen" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                    </div>
-                </div>
     
             </div>
         </section>
@@ -245,39 +238,43 @@
 
     
     <!-- locker address info -->
-    <div class="prohibitted-container" id="services">
 
-        <div class="services-tracker-box">
-            <i class='bx bxs-map-alt' ></i>
+    <section class="section-m1">
 
-            <div class="address-container">
-                <h2>Dirección de nuestro casillero en Miami</h2>
-                <div class="address-text-container">
-                    <p><strong>Dirección:</strong> 
-                        <br> 
-                        Dirección/Address: 8262 NW 14TH ST, 
-                        <br>
-                        Ciudad/City: Doral
-                        <br>
-                        Estado/State: Florida
-                        <br>
-                        CódigoZIP/ZIP Code: 33126
+        <div class="prohibitted-container" id="services">
+
+            <div class="services-tracker-box">
+                <i class='bx bxs-map-alt' ></i>
+    
+                <div class="address-container">
+                    <h2 style="font-size: 25px;">Dirección de nuestro casillero en Miami</h2>
+                    <div class="address-text-container">
+                        <p><strong>Dirección:</strong> 
+                            <br> 
+                            Dirección/Address: 8262 NW 14TH ST, 
+                            <br>
+                            Ciudad/City: Doral
+                            <br>
+                            Estado/State: Florida
+                            <br>
+                            CódigoZIP/ZIP Code: 33126
+                            
                         
+                        </p>
+                    </div>
                     
-                    </p>
-                    <p><strong>Horario de recibo de paquetes:</strong> De Lunes a Domingo, 24/7 con nuestro servicio de casillero.</p>
-                    <p><strong>Horario para Costa Rica:</strong> De Lunes a Viernes, de 8am a 6pm y Sábados de 8am a 3pm.</p>
+                    <img src="/assets/img/casillero.jpg" alt="nicoya">
+    
+                    
                 </div>
-                
-                <img src="/assets/img/nicoya.jpeg" alt="casillero">
-
-                
             </div>
+        
+        
         </div>
     
-    
-    </div>
 
+    </section>
+    
     
     <!-- tracker section design-->
 
@@ -314,31 +311,40 @@
 
     <!-- Calculator section -->
 
-    <div class="prohibitted-container">
+    <section class="section-m1">
+        <div class="prohibitted-container">
 
-        <div class="services-tracker-box">
-            <i class='bx bx-calculator' ></i>
-            <h3>Calculadora de costos</h3>
-            <p>Utiliza nuestra interfaz para generar un calculo estimado del costo de tu pedido.</p>
-    
-                <section class="calculator" id="calculator">
-                <div class="portfolio-box">
-                    <label for="exchangeRate">Tipo de Cambio (USD a CRC):</label>
-                    <input type="number" id="exchangeRate" step="0.01" required>
+            <div class="services-tracker-box">
+                <i class='bx bx-calculator' ></i>
+                <h3>Calculadora de costos</h3>
+                <p>Utiliza nuestra interfaz para generar un calculo estimado del costo de tu pedido.</p>
         
-                    <label for="orderWeight">Peso de la Orden (en libras):</label>
-                    <input type="number" id="orderWeight" step="0.01" required>
+                    <section class="calculator" id="calculator">
+                    <div class="portfolio-box">
+                        <label for="exchangeRate">Tipo de Cambio (USD a CRC):</label>
+                        <input type="number" id="exchangeRate" step="0.01" required>
+            
+                        <label for="orderWeight">Peso de la Orden (en libras):</label>
+                        <input type="number" id="orderWeight" step="0.01" required>
+            
+                        <button id="calculateTotal">Calcular</button>
+            
+                        <p id="totalCost">Total: <span id="result">0</span> CRC</p>
+                    </div>
+            
+                </section>
         
-                    <button id="calculateTotal">Calcular</button>
+            </div>
         
-                    <p id="totalCost">Total: <span id="result">0</span> CRC</p>
-                </div>
-        
-            </section>
-    
         </div>
+
+    </section>
     
-    </div>
+
+    <section id="page-header" class="about-header">
+        
+    </section>
+    
 
 
 
