@@ -723,7 +723,7 @@ span {
 .portfolio-container .portfolio-box {
     position: relative;
     border-radius: 2rem;
-    box-shadow:  0 0 1rem var(--txt);
+    box-shadow:  0 0 1rem grey;
     overflow: hidden;
     display: flex;
     width: auto;
