@@ -89,3 +89,5 @@ function handleSubmit (event) {
   $buttonMailto.setAttribute('href', `mailto:info@nicoyaxpress.com?subject=${form.get('subject')}  de parte de: ${form.get('nombre')}&body=${form.get('message')} Puedes contactarme al número: ${form.get('numero')}`)
   $buttonMailto.click()
 } 
+
+

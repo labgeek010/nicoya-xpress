@@ -26,6 +26,11 @@
     --text-clr: #464646;
     --tabs-list-bg-clr: #c8d6fd;
     --btn-hvr: #0317b0;
+    --clr-neutral-100: hsl(0, 0%, 100%);
+    --clr-primary-100: hsl(205, 15%, 58%);
+    --clr-primary-400: hsl(215, 25%, 27%);
+    --clr-primary-800: hsl(217, 33%, 17%);
+    --clr-primary-900: hsl(218, 33%, 9%);
 }
 
 html{
@@ -39,15 +44,10 @@ body{
     overflow: auto;
 }
 
-section{
-    min-height: 25vh;
-    padding: 5rem 9% 2rem;
-}
-
 
 h1 {
     font-size: 50px;
-    line-height: 64px;
+    line-height: 50px;
     color: #222;
   }
   
@@ -81,9 +81,13 @@ h1 {
     margin: 40px 0;
   }
 
+  section {
+    min-height: 25vh;
+    padding: 3rem 9% 1rem;
+}
 
 
-button.normal {
+    button.normal {
     font-size: 14px;
     font-weight: 600;
     padding: 15px 30px;
@@ -175,6 +179,91 @@ button.normal {
     }
 }
 
+
+.scroller {
+    width: 95%;
+    margin: 0 auto;
+  }
+  
+  .scroller__inner {
+    padding-block: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  
+  .scroller[data-animated="true"] {
+    overflow: hidden;
+    -webkit-mask: linear-gradient(
+      90deg,
+      transparent,
+      white 20%,
+      white 80%,
+      transparent
+    );
+    mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+  }
+  
+  .scroller[data-animated="true"] .scroller__inner {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    flex-wrap: nowrap;
+    -webkit-animation: scroll var(--_animation-duration, 55s)
+      var(--_animation-direction, forwards) linear infinite;
+            animation: scroll var(--_animation-duration, 55s)
+      var(--_animation-direction, forwards) linear infinite;
+  }
+  
+  .scroller[data-direction="right"] {
+    --_animation-direction: reverse;
+  }
+  
+  .scroller[data-direction="left"] {
+    --_animation-direction: forwards;
+  }
+  
+  .scroller[data-speed="fast"] {
+    --_animation-duration: 45s;
+  }
+  
+  .scroller[data-speed="slow"] {
+    --_animation-duration: 60s;
+  }
+  
+  @-webkit-keyframes scroll {
+    to {
+      transform: translate(calc(-50% - 0.5rem));
+    }
+  }
+  
+  @keyframes scroll {
+    to {
+      transform: translate(calc(-50% - 0.5rem));
+    }
+  }
+  
+  /* general styles */
+  
+  .tag-list {
+    margin: 0;
+    padding-inline: 0;
+    list-style: none;
+  }
+  
+  .tag-list li {
+    padding: 1rem;
+    background: var(--clr-primary-400);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem -0.25rem var(--clr-primary-900);
+  }
+  
+  /* for testing purposed to ensure the animation lined up correctly */
+  .test {
+    background: red !important;
+  }
+
 .home-content {
     margin-top: 10rem;
 }
@@ -189,7 +278,7 @@ button.normal {
 }
 
 span {
-    color: var(--main-color);
+    color: var(--btn-hvr);
 }
 
 .home-content  h1{
@@ -499,7 +588,7 @@ span {
   }
 
 .heading{
-
+    padding: 25px 10px;
     margin-top: 25px;
     text-align: center;
     font-size: 4.5rem;
@@ -622,10 +711,13 @@ span {
 }
 
 .portfolio-container{
+    background: var(--bg-color);
     display: grid;
-    grid-template-columns: repeat(5, 1fr) ;
+    grid-template-columns: repeat(6, 1fr) ;
     align-items: center;
+    border-radius: 8px;
     gap: 2.5rem;
+    padding: 25px;
 }
 
 .portfolio-container .portfolio-box {
@@ -1262,9 +1354,7 @@ input[type="radio"] {
 
 
 @media (max-width: 617px){
-    .portfolio-container{
-        grid-template-columns: 1fr;
-    }
+   
     
     .services-tracker-box{
         width: 345px;
