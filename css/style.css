@@ -12,7 +12,7 @@
 
 :root {
     --bg-color: #dadde2;
-    --second-bg-color: #88a4f3;
+    --second-bg-color: rgb(80, 164, 224);
     --text-color: #0f0f0f;
     --main-color: rgb(64, 146, 240);
     --body:#5fbaf4;
@@ -21,11 +21,11 @@
     --txt:#007bfb;
     --light: #c5cea9;
     --3rd:#5d94e6;
-    --primary-clr: #000cf9;
+    --primary-clr: #0e85ee;
     --white: #fff;
     --text-clr: #464646;
     --tabs-list-bg-clr: #c8d6fd;
-    --btn-hvr: #0317b0;
+    --btn-hvr: rgb(0, 128, 255);
     --clr-neutral-100: hsl(0, 0%, 100%);
     --clr-primary-100: hsl(205, 15%, 58%);
     --clr-primary-400: hsl(215, 25%, 27%);
@@ -641,13 +641,19 @@ span {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 5px;
+    gap: 15px;
     text-align: center;
     width: 950px;
     margin: 0 auto;
-    
+    padding: 10px;
+    border-radius: 5%;
 
 }
+
+.prohibitted-container img{
+    border-radius: 5%;
+}
+
 
 .services-container .services-box{
     flex: 1 1 30rem;
@@ -710,6 +716,7 @@ span {
     margin-bottom: 4rem;
 }
 
+
 .portfolio-container{
     background: var(--bg-color);
     display: grid;
@@ -720,7 +727,7 @@ span {
     padding: 25px;
 }
 
-.portfolio-container .portfolio-box {
+.portfolio-container .portfolio-box { 
     position: relative;
     border-radius: 2rem;
     box-shadow:  0 0 1rem grey;
@@ -730,7 +737,7 @@ span {
     max-width: 330px;
 }
 
-.portfolio-box {
+.portfolio-box  {
     min-height: 115px;
 }
 
@@ -742,6 +749,7 @@ span {
     object-fit: contain;
 
 }
+
 
 .portfolio-box:hover img {
     transform: scale(1.1);
@@ -763,6 +771,7 @@ span {
     transform: translateY(100%);
     transition: .5s ease;
 }
+
 
 .portfolio-box:hover .portfolio-layer{
     transform: translateY(0);
@@ -1140,7 +1149,7 @@ button:hover {
 .accordion li {
     list-style: none;
     width: 100%;
-    margin: 20px;
+    margin: 15px 0;
     padding: 10px;
     border-radius: 8px;
     background: var(--second-bg-color);
@@ -1323,8 +1332,13 @@ input[type="radio"] {
         margin-bottom: 3rem; 
     }
 
-    .portfolio-container{
+    .portfolio-container {
         grid-template-columns: repeat(2, 1fr)
+    }
+
+    .prohibitted-container {
+        grid-template-columns: repeat(2, 1fr)
+
     }
 
     .services-container img{
@@ -1409,12 +1423,22 @@ input[type="radio"] {
 
     }
 
+    
     .prohibitted-container{
-        width: 300px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 300px;
+
     }
+    .prohibitted-box{
+        
+        width: 175px;
+    }
+ 
     
     .prohibitted-box img {
-        width: 225px;
+        width: 150px;
         border-radius: 15%;
     }
 
