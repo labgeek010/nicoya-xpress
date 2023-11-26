@@ -12,7 +12,7 @@
 
 :root {
     --bg-color: #dadde2;
-    --second-bg-color: rgb(57, 144, 206);
+    --second-bg-color: rgb(117, 156, 186);
     --text-color: #0f0f0f;
     --main-color: rgb(64, 146, 240);
     --body:#5fbaf4;
@@ -1214,6 +1214,19 @@ input[type="radio"] {
     color: var(--btn-hvr);
 }
 
+.prohibit-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    text-align: center;
+    width: 950px;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 5%;
+
+    }
+
 /*BREAKPOINTS*/
 @media  (max-width: 1200px){
     html {
@@ -1425,16 +1438,15 @@ input[type="radio"] {
 
     
     .prohibit-container{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-        text-align: center;
-        width: 950px;
-        margin: 0 auto;
-        padding: 10px;
-        border-radius: 5%;
-        
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    text-align: center;
+    width: 950px;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 5%;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
