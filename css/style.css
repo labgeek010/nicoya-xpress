@@ -12,7 +12,7 @@
 
 :root {
     --bg-color: #dadde2;
-    --second-bg-color: rgb(80, 164, 224);
+    --second-bg-color: rgb(57, 144, 206);
     --text-color: #0f0f0f;
     --main-color: rgb(64, 146, 240);
     --body:#5fbaf4;
@@ -23,11 +23,11 @@
     --3rd:#5d94e6;
     --primary-clr: #0e85ee;
     --white: #fff;
-    --text-clr: #464646;
+    --text-clr: #040404;
     --tabs-list-bg-clr: #c8d6fd;
     --btn-hvr: rgb(0, 128, 255);
     --clr-neutral-100: hsl(0, 0%, 100%);
-    --clr-primary-100: hsl(205, 15%, 58%);
+    --clr-primary-100: hsl(0, 0%, 0%);
     --clr-primary-400: hsl(215, 25%, 27%);
     --clr-primary-800: hsl(217, 33%, 17%);
     --clr-primary-900: hsl(218, 33%, 9%);
@@ -68,8 +68,8 @@ h1 {
   }
   
   p {
-    font-size: 16px;
-    color: #465b52;
+    font-size: 22px;
+    color: #000000;
     margin: 15px 0 20px 0;
   }
   
@@ -1424,11 +1424,27 @@ input[type="radio"] {
     }
 
     
-    .prohibitted-container{
+    .prohibit-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        text-align: center;
+        width: 950px;
+        margin: 0 auto;
+        padding: 10px;
+        border-radius: 5%;
+        
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 300px;
+    }
+
+    .prohibitted-container{
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        width: 300px;
 
     }
     .prohibitted-box{
