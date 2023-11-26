@@ -713,7 +713,7 @@ span {
 .portfolio-container{
     background: var(--bg-color);
     display: grid;
-    grid-template-columns: repeat(6, 1fr) ;
+    grid-template-columns: repeat(5, 1fr) ;
     align-items: center;
     border-radius: 8px;
     gap: 2.5rem;
@@ -1134,7 +1134,7 @@ button:hover {
 
 .accordion {
     margin: 60px auto;
-    width: 45%;
+    width: 75%;
 }
 
 .accordion li {
